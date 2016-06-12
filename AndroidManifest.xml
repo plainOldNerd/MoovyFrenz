@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mouat.moovyfrenz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/moovyfrenz"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".View.StartOptions"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.ViewParties"
+            android:label="@string/title_activity_view_parties"></activity>
+
+        <activity
+            android:name=".View.SearchMovies"
+            android:label="@string/title_activity_search_movies"></activity>
+
+        <activity
+            android:name=".View.SearchResults"
+            android:label="@string/title_activity_search_results"></activity>
+
+        <activity
+            android:name=".View.SingleSearchResult"
+            android:label="@string/title_activity_single_search_result"></activity>
+
+        <activity
+            android:name=".View.PartyDetails"
+            android:label="@string/title_activity_party_details"></activity>
+
+        <activity
+            android:name=".View.CreateInvitees"
+            android:label="@string/title_activity_create_invitees"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".View.SingleInvitee"
+            android:label="@string/title_activity_single_invitee"></activity>
+
+        <activity
+            android:name=".View.SingleParty"
+            android:label="@string/title_activity_single_party"></activity>
+
+    </application>
+
+</manifest>

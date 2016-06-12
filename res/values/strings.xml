@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MoovyFrenz</string>
+    <string name="searchKey">com.mouat.moovyfrenz.searchKey</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_user">NewUser</string>
+    <string name="title_activity_start_options">StartOptions</string>
+    <string name="title_activity_view_parties">ViewParties</string>
+    <string name="title_activity_search_movies">CreateParty</string>
+    <string name="title_activity_search_results">SearchResults</string>
+    <string name="title_activity_single_search_result">SingleSearchResult</string>
+    <string name="title_activity_party_details">PartyDetails</string>
+    <string name="title_activity_create_invitees">CreateInvitees</string>
+    <string name="title_activity_single_invitee">SingleInvitee</string>
+    <string name="title_activity_single_party">SingleParty</string>
+
+    <string name="switchToViewParties1">editDetails</string>
+    <string name="switchToViewParties2">viewDetails</string>
+
+    <string name="myParties">"      View Parties      "</string>
+    <string name="createParty">Create New Party</string>
+
+    <string name="searchMovies">Search Movies</string>
+
+    <string name="fullPlot">Full Plot</string>
+    <string name="shortPlot">Short Plot</string>
+    <string name="comingFromCreate">createParty</string>
+    <string name="Date">Date:  </string>
+    <string name="Time">Time:  </string>
+    <string name="Venue">Venue:  </string>
+    <string name="Invite">Invite Friends</string>
+    <string name="accept">Attend</string>
+    <string name="maybe">Maybe</string>
+    <string name="decline">Decline</string>
+
+    <string name="inviteMore">"            Invite            "</string>
+    <string name="makePartyAndSend">Send Invitations</string>
+    <string name="inviteeName">Name:  </string>
+    <string name="inviteeNumber">Ph No:  </string>
+    <string name="existingParty">existingParty</string>
+
+    <string name="viewDetails">View Details</string>
+    <string name="editDetails">Edit Details</string>
+
+</resources>

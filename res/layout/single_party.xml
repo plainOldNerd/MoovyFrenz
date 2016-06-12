@@ -1,0 +1,99 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/movieLayout"
+
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/poster2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title2"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/year2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/resultsShort2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ratingAndViewLayout"
+
+        android:orientation="vertical"
+
+        android:layout_below="@+id/movieLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:numStars="5"
+            android:stepSize="0.5"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+        <Button
+            android:id="@+id/viewEditDetails"
+
+            android:layout_gravity="end"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

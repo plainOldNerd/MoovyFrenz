@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mouat.moovyfrenz.View.CreateInvitees">
+
+    <RelativeLayout
+        android:id="@+id/newInviteesLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/inviteMore"
+            android:text="@string/inviteMore"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/newInviteeNameLabel"
+            android:text="@string/inviteeName"
+
+            android:layout_below="@+id/inviteMore"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="300px"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/newInviteeNameText"
+
+            android:layout_below="@id/inviteMore"
+            android:layout_toRightOf="@id/newInviteeNameLabel"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spacefiller3"
+            android:text="   "
+
+            android:layout_below="@id/newInviteeNameLabel"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="230px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/newInviteeNumberLabel"
+            android:text="@string/inviteeNumber"
+
+            android:layout_below="@id/spacefiller3"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="300px"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/newInviteeNumberText"
+            android:inputType="phone"
+
+            android:layout_below="@id/newInviteeNameText"
+            android:layout_toRightOf="@id/newInviteeNumberLabel"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/makePartyAndSend"
+        android:text="@string/makePartyAndSend"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/newInviteesLayout"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/inviteesLV"
+
+        android:layout_below="@id/makePartyAndSend"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mouat.moovyfrenz.View.PartyDetails">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/poster2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title2"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+                <TextView
+                    android:id="@+id/year2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+                <TextView
+                    android:id="@+id/plot"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+                <Button
+                    android:id="@+id/shortFullButton"
+                    android:text="@string/fullPlot"
+
+                    android:layout_below="@id/plot"
+                    android:layout_gravity="right"
+
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingOnDetails"
+            android:numStars="5"
+            android:stepSize="0.5"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+        <RelativeLayout
+            android:id="@+id/InviteFunction"
+
+            android:focusableInTouchMode="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/DateLabel"
+                android:text="@string/Date"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/spacefiller"
+                android:text="   "
+
+                android:layout_below="@id/DateLabel"
+
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/TimeLabel"
+                android:text="@string/Time"
+
+                android:layout_below="@id/spacefiller"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/spacefiller2"
+                android:text="   "
+
+                android:layout_below="@id/TimeLabel"
+
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/VenueLabel"
+                android:text="@string/Venue"
+
+                android:layout_below="@id/spacefiller2"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+            />
+
+            <EditText
+                android:id="@+id/DateText"
+
+                android:layout_toRightOf="@id/DateLabel"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+
+            <EditText
+                android:id="@+id/TimeText"
+
+                android:layout_toRightOf="@id/TimeLabel"
+                android:layout_below="@id/DateText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+
+            <EditText
+                android:id="@+id/VenueText"
+                android:inputType="textMultiLine"
+
+                android:ems="30"
+
+                android:layout_below="@id/TimeText"
+                android:layout_toRightOf="@id/VenueLabel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/acceptLayout"
+
+            android:orientation="horizontal"
+
+            android:layout_below="@+id/InviteFunction"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/accept"
+                android:text="@string/accept"
+
+                android:layout_toLeftOf="@+id/maybe"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+            <Button
+                android:id="@+id/startInvites"
+                android:text="@string/Invite"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+            <Button
+                android:id="@+id/maybe"
+                android:text="@string/maybe"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+            <Button
+                android:id="@+id/decline"
+                android:text="@string/decline"
+
+                android:layout_toRightOf="@+id/maybe"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
